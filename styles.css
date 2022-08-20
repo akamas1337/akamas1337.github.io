@@ -1,0 +1,106 @@
+@font-face
+{
+    font-family: "Main Font";
+    src: url('https://cieran.uk/test/unik2.woff') format('woff'),
+         url('https://cieran.uk/test/unik2.ttf') format('truetype');
+}
+
+h1 
+{
+    color: #e0e0e0;
+    font-family: "Main Font", Verdana, Tahoma;
+    text-align: center;
+    font-size: 320px;
+}
+html 
+{
+    min-width: 100vw;
+	scroll-snap-type: mandatory;
+	scroll-snap-points-y: repeat(99vh);
+	scroll-snap-type: y mandatory;
+	padding: 0;
+    margin: 0;
+}
+body 
+{
+    overflow-x: hidden;
+    min-width: 100vw;
+    background-color: #cccccc;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+#scrollPoint
+{
+    scroll-snap-align: start;
+}
+#topHeader
+{
+    top: 0vh;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    /*background-image: url("header.png");*/
+    height:100vh;
+    width:100vw;
+}
+#backgroundVid
+{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+}
+#rocket
+{
+	font-family: "Main Font", Verdana, Tahoma;
+	font-size: 34px;
+    margin-left: 45vw;
+    margin-top: 250px;
+    z-index: 2;
+    position: absolute;
+    right: 2vw;
+}
+#section2
+{
+    min-width: 100vw;
+    background-color: #FFFFFF;
+    margin-top: -5px;
+    height: 100vh;
+}
+#section3
+{
+    min-width: 100vw;
+    scroll-snap-align: start;
+    background-color: #969696;
+    margin-top: -5px;
+    height: 100vh;
+}
+#topScroll
+{
+    scroll-snap-align: start;
+}
+#footer
+{
+    position:absolute;
+    right:50vw;
+    background-color: #262626;
+}
+div
+{
+    word-break: break-word;
+    overflow-x: hidden;
+}
+p
+{
+    word-break: break-word;
+    overflow-x: hidden;
+}
+footer
+{
+    position:relative;
+    background-color: #262626;
+    height: 15vh;
+}
+
