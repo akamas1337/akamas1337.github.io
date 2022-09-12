@@ -108,7 +108,6 @@ body
 #section3
 {
     min-width: 100vw;
-    scroll-snap-align: start;
     background-color: #969696;
     margin-top: -5px;
     height: 100vh;
