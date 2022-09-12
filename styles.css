@@ -30,6 +30,48 @@ body
     padding: 0;
     margin: 0;
 }
+.topnav {
+  background-color: #142362;
+  overflow: hidden;
+  padding: 3vh;
+}
+.layout {
+    text-align: center;
+    overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Heebo';
+  font-weight: 100;
+}
+@font-face {
+    font-family: 'Heebo'; /*a name to be used later*/
+    src: url('https://cieran.uk/newTest/Heebo-VariableFont_wght.ttf'); /*URL to font*/
+}
+
+/* Change the color of links on hover */
+.topnav a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.topnav a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 #scrollPoint
 {
     scroll-snap-align: start;
@@ -51,6 +93,7 @@ body
     height: 100vh;
     left: 0px;
     top: 0px;
+    object-fit: fill;
 }
 #rocket
 {
@@ -77,6 +120,97 @@ body
     margin-top: -5px;
     height: 100vh;
 }
+#section4
+{
+    min-width: 100vw;
+    scroll-snap-align: start;
+    background-color: #1c2c72;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+#section5
+{
+    min-width: 100vw;
+    scroll-snap-align: start;
+    background-color: #0f1c57;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+#mainText
+{
+    font-size: 82px;
+    font-family: 'Heebo';
+    font-weight: 150;
+    color: #fff;
+    left: 5vw;
+    position: relative;
+}
+#descText
+{
+    font-size: 42px;
+    font-family: 'Heebo';
+    font-weight: 150;
+    color: #fff;
+    left: 35vw;
+    position: absolute;
+}
+#descText2
+{
+    font-size: 42px;
+    font-family: 'Heebo';
+    font-weight: 150;
+    color: #fff;
+    right: 40vw;
+    position: absolute;
+}
+#desc
+{
+    word-break: break-word;
+    overflow-x: hidden;
+    font-size: 20px;
+    font-family: 'Heebo';
+    font-weight: 150;
+    color: #c8c8c8;
+    left: 35vw;
+    position: relative;
+    margin-right: 40vw;
+    top: 5vh;
+}
+#desc2
+{
+    word-break: break-word;
+    overflow-x: hidden;
+    font-size: 20px;
+    font-family: 'Heebo';
+    font-weight: 150;
+    color: #c8c8c8;
+    left: 35vw;
+    position: relative;
+    margin-right: 40vw;
+    top: 5vh;
+    text-align: right;
+}
+#work
+{
+    position: relative;
+    height: 33.333%;
+    width: 100vw;
+    overflow: hidden;
+}
+#mockup
+{
+    height: 100%;
+    position: absolute;
+    left: 10vw;
+}
+#mockup2
+{
+    height: 100%;
+    position: absolute;
+    right: 10vw;
+}
 #topScroll
 {
     scroll-snap-align: start;
@@ -86,6 +220,55 @@ body
     position:absolute;
     right:50vw;
     background-color: #262626;
+}
+#centerText
+{
+    font-size: 50px;
+    font-family: 'Heebo';
+    font-weight: 150;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+#centerSubText
+{
+    font-size: 25px;
+    font-family: 'Heebo';
+    font-weight: 150;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+#leftText
+{
+    font-size: 50px;
+    font-family: 'Heebo';
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    top: 5vw;
+    text-align: center;
+    left: 5vw;
+}
+rightTextBold
+{
+    font-size: 30px;
+    font-family: 'Heebo';
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    top: 5vw;
+    text-align: center;
+}
+rightText
+{
+    font-size: 20px;
+    font-family: 'Heebo';
+    font-weight: 300;
+    color: #fff;
+    position: relative;
+    top: 3vw;
+    text-align: center;
 }
 div
 {
