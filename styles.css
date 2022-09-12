@@ -48,7 +48,7 @@ body
 }
 
 /* Change the color of links on hover */
-.topnav a:after {
+a:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -61,7 +61,7 @@ body
   transition: transform 0.25s ease-out;
 }
 
-.topnav a:hover:after {
+a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
