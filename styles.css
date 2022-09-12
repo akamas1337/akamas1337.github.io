@@ -1,10 +1,3 @@
-@font-face
-{
-    font-family: "Main Font";
-    src: url('https://cieran.uk/test/unik2.woff') format('woff'),
-         url('https://cieran.uk/test/unik2.ttf') format('truetype');
-}
-
 h1 
 {
     color: #e0e0e0;
@@ -51,7 +44,7 @@ body
 }
 @font-face {
     font-family: 'Heebo'; /*a name to be used later*/
-    src: url('https://cieran.uk/newTest/Heebo-VariableFont_wght.ttf'); /*URL to font*/
+    src: url('https://akamas1337.github.io/Heebo-VariableFont_wght.ttf'); /*URL to font*/
 }
 
 /* Change the color of links on hover */
