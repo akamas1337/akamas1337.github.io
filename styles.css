@@ -48,7 +48,7 @@ body
 }
 
 /* Change the color of links on hover */
-a:after {
+.underliner:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -61,7 +61,7 @@ a:after {
   transition: transform 0.25s ease-out;
 }
 
-a:hover:after {
+.underliner:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
