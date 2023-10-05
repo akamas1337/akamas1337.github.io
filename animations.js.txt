@@ -1,0 +1,41 @@
+// animation.js
+
+const box = document.querySelector('.box');
+
+function animateBox() {
+    const newX = Math.random() * (window.innerWidth - 100);
+    const newY = Math.random() * (window.innerHeight - 100);
+    box.style.transform = `translate(${newX}px, ${newY}px)`;
+
+    const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    box.style.backgroundColor = randomColor;
+}
+
+function scaleBox() {
+    const newScale = Math.random() * 2 + 0.5; // Random scale between 0.5 and 2
+    box.style.transform = `scale(${newScale})`;
+}
+
+function rotateBox() {
+    const newRotation = Math.random() * 360; // Random rotation angle
+    box.style.transform = `rotate(${newRotation}deg)`;
+}
+
+box.addEventListener('click', () => {
+    // Randomly select one of the three animations
+    const randomAnimation = Math.floor(Math.random() * 3);
+
+    switch (randomAnimation) {
+        case 0:
+            animateBox();
+            break;
+        case 1:
+            scaleBox();
+            break;
+        case 2:
+            rotateBox();
+            break;
+        default:
+            animateBox(); // Default to the translate animation
+    }
+});
